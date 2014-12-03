@@ -1,0 +1,157 @@
+/* CSS Document */
+@media (min-width: 500px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (min-width: 700px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 120%;
+    }
+}
+.bodybg {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.png');
+    width: 100%;
+    height: 1000px;
+}
+.line{
+	width:100%;
+	height:1.5px;
+	background:#FFF;
+}
+/*.headerbg{
+	font-size:30px;
+    padding-top:10px;
+	margin:0;
+	background:#5c164f;
+     height: 100px;
+     text-align:center;
+}
+.footerbg{
+    font-size:20px;
+	margin:0;
+	background:#5c164f;
+     height: 90px;
+     text-align:center;
+}*/
+.info{
+	width:100%;
+	height:700px;
+}
+#left{
+	width:33%;
+	height:300px;
+	background:rgba(255,255,255,0.1);
+	float:left;
+}
+#center{
+	width:34%;
+	height:300px;
+	background:rgba(255,255,255,0.3);
+	float:left;
+}
+#right{
+	width:33%;
+	height:300px;
+	background:rgba(255,255,255,0.1);
+	 float:right;
+}
+#wicon{
+	width: 130px;
+	height: 130px;
+	padding-left: 40%;
+	padding-top: 50px;
+
+}
+#number{
+	padding-left:33%;
+	padding-top:5px;
+	font-size:10em;
+	color:#FFF;
+	font:Arial, Helvetica, sans-serif;
+	float:left;
+}
+#time{
+	padding-left:30%;
+	padding-top:5px;
+	font-size:30px;
+	color:#FFF;
+	font:"Comic Sans MS", cursive;
+	float:left;
+}
+#ldate,#cdate,#rdate{
+	border:#5c164f 1px solid;
+	width:60px;
+	background:#5c164f;
+	font-size:2em;
+	color:#FFF;
+	margin-left:33%;
+	margin-top:18px;
+	text-align:center;
+	border-radius:15px;
+	float:left;
+}
+.image{
+width:65px;
+margin-left:33%;
+margin-top:18px;
+}
+
+#lday, #lnight, #cday, #cnight, #rday, #rnight{
+	width:60px;
+	color:#FFF;
+	margin-left:33%;
+	margin-top:18px;
+	text-align:center;
+	font:Arial, Helvetica, sans-serif;
+	font-size:2em;
+}
+#menu{
+	background:url('../images/menu.png') no-repeat;
+	height:55px;
+	width: 55px;
+	float:left;
+	margin-top:15px;
+}
+#plus{
+	background:url('../images/plus.png') no-repeat;
+	height:55px;
+	width: 55px;
+	float:right;
+	margin-top:15px;
+}
+#title{
+	float:left;
+	text-align:center;
+	padding-left:30%;
+}
+
+#footer{
+    font-size:20px;
+	margin:0;
+	background:#5c164f;
+    height: 90px;
+    text-align:center;
+}
+
+#header{
+   font-size:30px;
+    padding-top:10px;
+	margin:0;
+	background:#5c164f;
+    height: 100px;
+    text-align:center;
+}
+#footer p,#header p
+{
+    color:white;
+}
