@@ -3,67 +3,103 @@
 <head>
 <meta charset="utf-8">
 <title>MyWeather</title>
-
-<link href="css/index.css" rel="stylesheet" type="text/css"/>
-<script src="scripts/jquery-1.6.4.min.js" type="text/javascript"></script>
-<script src="scripts/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-<link href="css/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head> 
-<body> 
-   
-<div data-role="page" id="page">
-	<div class="headerbg">
-        <div id="menu"></div>
-        <div id="title">LONDON</div>
-        <div id="plus"></div>
-	</div>
-    <div class="line"></div>
-	<div data-role="content" class="bodybg">
-	 	<div>
-        	<div class="info">
-            <img id="wicon" src=""/>
-              <label id="number"></label>
-              <label id="time"></label>
-        	</div>
-        	<div>
-            	<div id="left">
-                	<div class="day">
-                    <label id="ldate"></label>
-                    </div>
-                    <img id="licon"src="" width="61" height="59" class="image">
-                    <div class="tempnumber">
-                    <label id="lday"></label><br />
+<body>
+
+    <div data-role="page" id="page1">
+        <div data-role="header" id="header">
+            <div id="menu"></div>
+            <div id="title"><p>LONDON</p></div>
+            <div>
+                <a href="#page2" id="plus"></a>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div data-role="content" class="bodybg">
+            <div>
+                <div class="info">
+                    <img id="wicon" src="" />
+                    <label id="number"></label>
+                    <label id="time"></label>
+                </div>
+                <div>
+                    <div id="left">
+
+                        <label id="ldate"></label>
+
+                        <img id="licon" src="" width="60" height="60" class="image">
+
+                        <label id="lday"></label>
                         <label id="lnight"></label>
+
                     </div>
-                </div>
-                <div id="center">
-					<div class="day">
-                    <label id="cdate"></label>
+                    <div id="center">
+
+                        <label id="cdate"></label>
+
+                        <img id="cicon" src="" width="60" height="60" class="image">
+                        
+                        <label id="cday"></label>
+                        <label id="cnight"></label>
+
                     </div>
-                    <img id="cion"src="" width="61" height="59" class="image">
-                    <div class="tempnumber">
-                    <label id="cday"></label><br />
-                    <label id="cnight"></label>
-                    </div>
-                </div>
-                <div id="right">
-                <div class="day">
-                    <label id="rdate"></label>
-                    </div>
-                    <img id="rion"src="" width="61" height="59" class="image">
-                    <div class="tempnumber">
-                    <label id="rday"></label><br />
-                    <label id="rnight"></label>
+                    <div id="right">
+
+                        <label id="rdate"></label>
+
+                        <img id="ricon" src="" width="60" height="60" class="image">
+                       
+                        <label id="rday"></label>
+                        <label id="rnight"></label>
+
                     </div>
                 </div>
             </div>
         </div>
-	</div>
-    <div class="line"></div>
-	<div class="footerbg">
-        <p class="title">Weather Demo</p>
-	</div>
-</div>
-    <script src="scripts/script.js"></script>
+
+      
+        <div data-role="footer" id="footer">
+            <div class="line"></div>
+            <p class="title">Weather Demo</p>
+        </div>
+
+    </div>
+
+    <div data-role="page" id="page2">
+        <div data-role="header" id="plusheader">
+            <div>
+                <a href="#page1" id="back"></a>
+            </div>
+            <div id="plustitle"><p>PLUS</p></div>
+        </div>
+        <div class="line"></div>
+        <div data-role="content" class="bodybg">
+            <div>
+                <div data-role="fieldcontain">
+                    <div id="search">
+                        <ul data-role="listview" data-filter="true" data-filter-placeholder="Search location..." data-split-icon="custom" data-filter-reveal="true">
+                            <li><a>Page</a><a href="#">Default</a>  </li>
+                            <li><a>Page1</a><a href="#">Default</a></li>
+                            <li><a>Page2</a><a href="#">Default</a></li>
+                            <li><a>Page3</a><a href="#">Default</a></li>
+                            <li><a>Page4</a><a href="#">Default</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div data-role="footer" id="plusfooter">
+                    <div class="line"></div>
+                    <p>Footer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+            <script src="scripts/script.js"></script>
+            <link href="css/index.css" rel="stylesheet" type="text/css" />
 </body>
 </html>

@@ -4,6 +4,6 @@
     <DebuggerFlavor>AndroidDevice</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <AutoRefresh>false</AutoRefresh>
+    <AutoRefresh>true</AutoRefresh>
   </PropertyGroup>
 </Project>
