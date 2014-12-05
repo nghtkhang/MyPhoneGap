@@ -9,64 +9,100 @@
 </head> 
 <body>
 
-    <div data-role="page" id="page">
-   
-            <div data-role="header" id="header">
-                <div id="menu"></div>
-                <div id="title"><p>LONDON</p></div>
-                <div id="plus"></div>
+    <div data-role="page" id="page1">
+        <div data-role="header" id="header">
+            <div id="menu"></div>
+            <div id="title"><p>LONDON</p></div>
+            <div>
+                <a href="#page2" id="plus"></a>
             </div>
-            <div class="line"></div>
+        </div>
+        <div class="line"></div>
 
         <div data-role="content" class="bodybg">
             <div>
                 <div class="info">
-                    <img id="wicon" src="images/01.png" />
+                    <img id="wicon" src="" />
                     <label id="number"></label>
                     <label id="time"></label>
                 </div>
                 <div>
                     <div id="left">
-                        
-                            <label id="ldate"></label>
-                        
-                        <img id="licon" src="images/01.png" width="61" height="59" class="image">
-                       
-                            <label id="lday"></label>
-                            <label id="lnight"></label>
-                      
+
+                        <label id="ldate"></label>
+
+                        <img id="licon" src="" width="60" height="60" class="image">
+
+                        <label id="lday"></label>
+                        <label id="lnight"></label>
+
                     </div>
                     <div id="center">
-                       
-                            <label id="cdate"></label>
-                      
-                        <img id="cion" src="images/01.png" width="61" height="59" class="image">
+
+                        <label id="cdate"></label>
+
+                        <img id="cicon" src="" width="60" height="60" class="image">
                         
-                            <label id="cday"></label>
-                            <label id="cnight"></label>
-                       
+                        <label id="cday"></label>
+                        <label id="cnight"></label>
+
                     </div>
                     <div id="right">
+
+                        <label id="rdate"></label>
+
+                        <img id="ricon" src="" width="60" height="60" class="image">
                        
-                            <label id="rdate"></label>
-                       
-                        <img id="rion" src="images/01.png" width="61" height="59" class="image">
-                      
-                            <label id="rday"></label>
-                            <label id="rnight"></label>
-                       
+                        <label id="rday"></label>
+                        <label id="rnight"></label>
+
                     </div>
                 </div>
             </div>
         </div>
 
+      
+        <div data-role="footer" id="footer">
             <div class="line"></div>
-            <div data-role="footer" id="footer">
-                <p class="title">Weather Demo</p>
-            </div>
+            <p class="title">Weather Demo</p>
+        </div>
 
     </div>
+
+    <div data-role="page" id="page2">
+        <div data-role="header" id="plusheader">
+            <div>
+                <a href="#page1" id="back"></a>
+            </div>
+            <div id="plustitle"><p>PLUS</p></div>
+        </div>
+        <div class="line"></div>
+        <div data-role="content" class="bodybg">
+            <div>
+                <div data-role="fieldcontain">
+                    <div id="search">
+                        <ul data-role="listview" data-filter="true" data-filter-placeholder="Search location..." data-split-icon="custom" data-filter-reveal="true">
+                            <li>
+                                <a>Page</a>
+                                <a href="#">Default</a>
+                            </li>
+                            <li><a>Page1</a><a href="#">Default</a></li>
+                            <li><a>Page2</a><a href="#">Default</a></li>
+                            <li><a>Page3</a><a href="#">Default</a></li>
+                            <li><a>Page4</a><a href="#">Default</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div data-role="footer" id="plusfooter">
+                    <div class="line"></div>
+                    <p>Footer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
             <script src="scripts/script.js"></script>
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
+            <link href="css/index.css" rel="stylesheet" type="text/css" />
 </body>
 </html>

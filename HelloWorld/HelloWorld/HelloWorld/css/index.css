@@ -22,11 +22,13 @@
     background-image: url('../images/background.png');
     width: 100%;
     height: 1000px;
+    padding-bottom:90px; 
 }
 .line{
 	width:100%;
 	height:1.5px;
 	background:#FFF;
+    clear:both;
 }
 /*.headerbg{
 	font-size:30px;
@@ -135,15 +137,20 @@ margin-top:18px;
 	padding-left:30%;
 }
 
-#footer{
+#footer, #plusfooter{
     font-size:20px;
 	margin:0;
+    margin-top:1.5px;
 	background:#5c164f;
     height: 90px;
     text-align:center;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
 }
 
-#header{
+#header, #plusheader{
    font-size:30px;
     padding-top:10px;
 	margin:0;
@@ -151,7 +158,62 @@ margin-top:18px;
     height: 100px;
     text-align:center;
 }
-#footer p,#header p
+#footer p,#header p,#plusheader p,#plusfooter p
 {
     color:white;
+}
+.headtitle{
+	float:left;
+	text-align:center;
+	padding-left:30%;
+}
+#search{
+margin:30px;
+padding-top:20px;
+}
+
+#search .ui-listview-filter{
+   border:none;
+   background:rgba(255,255,255,0.3);
+    width: 100%;
+	border-radius:1.2em;
+	margin-bottom:25px;
+    height:50%;
+}
+#search  .ui-input-search input
+{
+    min-height: 2.5em;
+    font-size:1.5em;
+    margin-bottom: 2%;
+}
+#search .ui-listview li{
+    margin-left: 2%;
+	width: 95%;
+    border: 1px solid #ccc;
+	background:rgba(255,255,255,0.6);
+
+}
+#search .ui-btn
+{
+    font-size:1.5em;
+}
+
+#search .ui-icon-custom{
+	background-image:url('../images/plus-64.png');
+}
+#back{
+	background:url('../images/back.png') no-repeat;
+	height:55px;
+	width: 55px;
+	float:left;
+	margin-top:15px;
+}
+ #search .ui-icon-search{
+    background-image:url('../images/find.png');
+}
+
+/* delete icon */
+#search .ui-icon-delete{
+    background-image: url('../images/cancel.png');
+
 }

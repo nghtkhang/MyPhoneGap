@@ -49,8 +49,12 @@ C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\Hello
 C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\11.png \
 C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\13.png \
 C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\50.png \
+C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\back.png \
 C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\background.png \
+C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\cancel.png \
+C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\find.png \
 C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\menu.png \
+C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\plus-64.png \
 C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\plus.png \
 C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\images\sun.png \
 C:\Users\Khang\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorld\HelloWorld\bld\Debug\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen \

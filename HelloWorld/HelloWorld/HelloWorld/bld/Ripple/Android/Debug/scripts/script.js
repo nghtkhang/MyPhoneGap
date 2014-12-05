@@ -34,8 +34,19 @@ $.ajax({
         d_names = new Array("", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun");
 
         var fullDate = new Date();
-        var ind = fullDate.getDay()-1;
-
+        var day = fullDate.getDay();
+        var ind = 0;
+        for (var i = 0; i < 7;i++)
+        {
+            var date = new Date(data.list[i].dt * 1000);
+            var daytmp = date.getDay();
+            if (daytmp == day)
+            {
+                ind = i+1;
+                break;
+            }
+                
+        }
         var daytemp = Math.round(data.list[ind].temp.day - 273.15);
         $("#lday").append(daytemp + "° ");
         var nighttemp = Math.round(data.list[ind].temp.night - 273.15);
@@ -48,26 +59,28 @@ $.ajax({
 
         ind = checkDay(ind);
 
-        daytemp = Math.round(data.list[ind].temp.day - 273.15);
-        $("#cday").append(daytemp + "° ");
-        nighttemp = Math.round(data.list[ind].temp.night - 273.15);
-        $("#cnight").append(nighttemp + "° ");
         date = new Date(data.list[ind].dt * 1000);
          i = date.getDay();
          $("#cdate").append(d_names[i]);
          icon = data.list[ind].weather[0].icon.substring(0, 2);
+        
+         daytemp = Math.round(data.list[ind].temp.day - 273.15);
+         $("#cday").append(daytemp + "° " );
+         nighttemp = Math.round(data.list[ind].temp.night - 273.15);
+         $("#cnight").append(nighttemp + "° ");
          $("#cicon").attr("src", "images/" + icon + ".png");
 
          ind = checkDay(ind);
 
-         daytemp = Math.round(data.list[ind].temp.day - 273.15);
-         $("#rday").append(daytemp + "° ");
-        nighttemp = Math.round(data.list[ind].temp.night - 273.15);
-        $("#rnight").append(nighttemp + "° ");
         date = new Date(data.list[ind].dt * 1000);
          i = date.getDay();
          $("#rdate").append(d_names[i]);
          icon = data.list[ind].weather[0].icon.substring(0, 2);
+         
+         daytemp = Math.round(data.list[ind].temp.day - 273.15);
+         $("#rday").append(daytemp + "° ");
+         nighttemp = Math.round(data.list[ind].temp.night - 273.15);
+         $("#rnight").append(nighttemp + "° ");
          $("#ricon").attr("src", "images/" + icon + ".png");
 
     },
